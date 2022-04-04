@@ -49,7 +49,7 @@ def pi_checker(file_arr : list, script : str, path : str=''):
 	if err_counter > 0:
 		print(f"Found {err_counter} errors in {path + script}")
 	else:
-		print("Congratulations, {path + script} is PIrfect!")
+		print(f"Congratulations, {path + script} is PI-rfect!")
 	rewrite_script(new_file_arr, script, path)
 
 
@@ -80,6 +80,7 @@ if __name__ == '__main__':
 	parser = argparse.ArgumentParser(description="Pi_thon")
 	parser.add_argument("-r", "--run", type=str, help="run the Pi_thon script", nargs=1)
 	parser.add_argument("-c", "--clean", type=str, help="clean Pi_thon script from Pi_thon comments", nargs=1)
+	parser.add_argument("-v", "--version", action="version", version="Pi_thon 1.0")
 	args = parser.parse_args()
 
 	if args.run:

@@ -21,7 +21,7 @@ def read_script(script : str, path : str='') -> list:
 	"""
 
 	try:
-		with open(path + script, 'r', encoding="urf-8") as file:
+		with open(path + script, 'r', encoding="utf-8") as file:
 			return file.read().splitlines()
 	except IOError:
 		print(f"{path + script} - No such file or directory")
@@ -42,5 +42,5 @@ def rewrite_script(new_file_arr : list, script : str, path : str=""):
 		Path to script
 	"""
 
-	with open(path + script, 'w', encoding="urf-8") as file:
+	with open(path + script, 'w', encoding="utf-8") as file:
 		file.write('\n'.join(new_file_arr))
