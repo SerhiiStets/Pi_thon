@@ -2,6 +2,7 @@
 
 Pi_thon is a script that tells you if your code is Pi-rfect or not.
 All your row's lengths should correspond with correlating pi digit. Comments and spaces do not count.<br><br>
+Inspired by Michael Keith book [Not A Wake: A Dream Embodying (pi)'s Digits Fully for 10000 Decimals](https://books.google.com.ua/books/about/Not_A_Wake.html?id=4AoGRQAACAAJ&redir_esc=y) <br><br>
 Example<br>
 ```python
 # This is working Python and Pi_thon script
