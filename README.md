@@ -1,7 +1,7 @@
 # Pi_thon
 
 Pi_thon is a script that tells you if your code is Pi-rfect or not.
-All your row's lengths should correspond with correlating pi digit. Comments do not count.<br><br>
+All your row's lengths should correspond with correlating pi digit. Comments and spaces do not count.<br><br>
 Example<br>
 ```python
 # This is working Python and Pi_thon script
