@@ -41,14 +41,14 @@ def cleaner(pi_thon_scripts : str):
 		Received file/folder as an argument from args
 	"""
 
-	if pi_thon_scripts[-3:] == ".py":
+	if "." in pi_thon_scripts:
 		file_arr = read_script(pi_thon_scripts)
 		clean_file_arr = remove_comments(file_arr)
 		rewrite_script(clean_file_arr, pi_thon_scripts)
 	else:
 		file_names = next(walk(pi_thon_scripts), (None, None, []))[2]
 		for script in file_names:
-			if script[-3:] == ".py":
+			if "." in script:
 				file_arr = read_script(script, pi_thon_scripts)
 				clean_file_arr = remove_comments(file_arr)
 				rewrite_script(clean_file_arr, script, pi_thon_scripts)
