@@ -7,7 +7,7 @@ Example<br>
 ```python
 # This is working Python and Pi_thon script
 
-n=4               # 3.
+n = 4             # 3.
 0                 # 1
 s = (n            # 4
 	*         # 1
@@ -59,7 +59,7 @@ This script shows if single digit number is even or odd
 `pi = 3,141592653589`
 ```python
 # -*- coding: utf-8 -*-
-n=4                       # 3.
+n = 4                     # 3.
 0                         # 1
 if (n                     # 4
 	%                 # 1
@@ -68,11 +68,22 @@ if (n                     # 4
 		  ""      # 2
 		  "ven")  # 6
 else:                     # 5
-	n=1               # 3
-	s="O"             # 5
+	n = 1             # 3
+	s = "O"           # 5
 	s = s + "dd"      # 8
 	print(s,)         # 9
 
+```
+### Bad code example
+```python
+# -*- coding: utf-8 -*-
+"""
+This script prints variable a
+"""
+
+a = 3
+
+print(a) # Pi_Error: number of character = 8, pi number = 1
 ```
 
 
